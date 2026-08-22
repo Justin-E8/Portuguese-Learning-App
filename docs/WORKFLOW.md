@@ -43,6 +43,12 @@ Run the checks relevant to the change, including:
 - iOS verification when available.
 - Structured content validation for learning content.
 
+Run the complete baseline suite with:
+
+```bash
+npm run check
+```
+
 ## Merge Policy
 
 - Do not merge incomplete work.
@@ -51,4 +57,3 @@ Run the checks relevant to the change, including:
 - Do not merge into `main` until the user has reviewed and approved the completed branch.
 - Prefer squash merge for a focused feature branch unless preserving individual commits adds value.
 - After merging, update local `main` and delete the completed feature branch when appropriate.
-

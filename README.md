@@ -33,6 +33,12 @@ npm run web
 ## Quality Checks
 
 ```bash
+npm run check
+```
+
+Or run checks individually:
+
+```bash
 npm run lint
 npm run typecheck
 npm run export:web

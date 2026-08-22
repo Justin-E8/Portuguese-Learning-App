@@ -10,12 +10,13 @@ Project foundation and universal application setup.
 - Initial product direction agreed.
 - Universal Expo architecture selected provisionally.
 - Git, content-quality, and European Portuguese rules documented.
+- Expo SDK 57 TypeScript application scaffolded for iOS and web.
+- Local linting, strict type checking, web export, and all Expo Doctor checks pass.
+- GitHub CI configured to run the baseline checks on feature branches and pull requests.
 
 ## In Progress
 
-- Scaffold the Expo TypeScript application.
-- Add baseline automated quality checks.
-- Verify the initial web build.
+- Complete and review the project-foundation branch before merging.
 
 ## Next
 
@@ -30,4 +31,4 @@ Project foundation and universal application setup.
 - Full Xcode is not installed. Web work can proceed, but the iOS Simulator and local iOS compilation require Xcode.
 - A native European Portuguese content reviewer and voice-recording plan have not yet been selected.
 - The initial target audience remains open, which affects scenario priorities and assumed proficiency.
-
+- `npm audit` reports a moderate advisory in `uuid@7.0.3` through Expo's native-project build tooling (`xcode`). Expo Doctor passes and npm offers no non-breaking automatic fix; monitor Expo for a compatible upstream update rather than forcing a downgrade.
