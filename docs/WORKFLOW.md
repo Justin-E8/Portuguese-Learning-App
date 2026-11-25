@@ -12,7 +12,7 @@ Examples:
 
 ```text
 codex/feature-phrase-packs
-codex/content-cafe-mission
+codex/content-cafe-phrases
 codex/fix-audio-replay
 ```
 

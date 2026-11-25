@@ -17,8 +17,9 @@ Do not rely on chat history as the only source of truth. Update the relevant ref
 - The teaching language is European Portuguese (`pt-PT`), not Brazilian Portuguese (`pt-BR`).
 - Never silently treat a Brazilian Portuguese expression, vocabulary item, pronunciation, or grammar pattern as the default.
 - AI-generated learning content is a draft until it has passed the review workflow in the content style guide.
-- The product teaches usable conversation through listening, response practice, phrase groups, reading, and short writing—not a traditional grammar-first course.
-- Conversation Missions and Quick Practice must draw from the same reviewed content rather than creating disconnected libraries.
+- The product teaches usable European Portuguese through listening, response practice, phrase groups, vocabulary, reading, and short writing—not a traditional grammar-first course.
+- The core experience is microlearning: activities should normally fit into one to five minutes and work independently.
+- Audio, phrase, vocabulary, sentence, and response activities must draw from the same reviewed content library rather than becoming disconnected collections.
 - Do not introduce a paid service, metered API, or dependency that requires a commercial account without explicit user approval.
 
 ## Git Rules
@@ -55,4 +56,3 @@ A feature is complete only when:
 - Learner-facing `pt-PT` content has the required review status.
 - Relevant reference and status documentation is updated.
 - The work is committed and pushed to its feature branch.
-

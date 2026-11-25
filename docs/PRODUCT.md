@@ -2,81 +2,82 @@
 
 ## Working Vision
 
-Build a listening-first European Portuguese conversation rehearsal app that helps learners participate in everyday life in Portugal.
+Build a microlearning-first European Portuguese practice app for people who want useful progress in short, manageable sessions.
 
-The app is not primarily a grammar-first course. It helps learners understand natural speech, retrieve useful language quickly, respond appropriately, repair misunderstandings, and become more comfortable in real conversations.
+The app is not a grammar-first course and is not organized around interactive stories or long conversation missions. It helps learners recognize natural speech, remember useful words and phrases, understand sentences, and produce appropriate responses through focused activities that normally take one to five minutes.
 
 Working product promise:
 
-> Rehearse the Portuguese conversation before you have it in real life.
+> Make useful European Portuguese stick, even when you only have a few minutes.
 
 ## Product Principles
 
 1. **European Portuguese by design** — language, audio, register, and cultural context default to Portugal.
-2. **Conversation is the destination** — isolated practice must transfer into realistic interaction.
-3. **Listening comes first** — learners need repeated exposure to natural speech, not only written recognition.
-4. **Useful chunks beat isolated words** — vocabulary includes words, phrases, short sentences, and reusable conversation moves.
-5. **More than one answer can be natural** — feedback should recognize appropriate alternatives rather than require one exact sentence.
-6. **Short practice matters** — useful sessions should fit into two to five minutes.
-7. **Quality over volume** — reviewed, reusable content is more valuable than a large unverified AI-generated library.
+2. **Short by default** — a learner should be able to complete something useful in one to five minutes.
+3. **Listening is central** — learners need repeated exposure to natural speech, not only written recognition.
+4. **Useful chunks beat isolated words alone** — content includes vocabulary, phrases, short sentences, and reusable responses.
+5. **Active recall beats passive browsing** — activities should ask the learner to recognize, retrieve, assemble, or respond.
+6. **One content library, many activities** — reviewed content should be reusable across listening, memorization, sentence, and response exercises.
+7. **Learner choice matters** — users may choose a topic or activity instead of following a mandatory linear course.
+8. **Quality over volume** — reviewed, reusable content is more valuable than a large unverified AI-generated library.
 
 ## Core Experiences
 
-### Conversation Missions
+### Listening Bites
 
-Immersive, goal-based scenarios such as ordering at a café, meeting family, speaking with a landlord, making plans, handling a phone call, or asking for clarification.
+Short European Portuguese audio clips followed by a focused task, such as:
 
-A mission should normally include:
+- Select the meaning of a word, phrase, or sentence.
+- Identify what was actually said.
+- Fill in a missing word or chunk.
+- Reassemble a sentence after hearing it.
+- Listen first without text, then reveal the transcript and meaning.
+- Compare natural and assisted playback.
 
-1. Natural-speed listening.
-2. A gist check without a transcript.
-3. Chunked replay and optional support.
-4. Two or three reusable conversation moves.
-5. A learner response or role-play.
-6. Natural alternative responses and feedback.
-7. A changed version that tests transfer.
+### Phrase and Vocabulary Packs
 
-### Quick Practice
+Topic-based groups containing related words, useful chunks, phrases, and short sentences. Practice should mix recognition and recall instead of presenting a passive list.
 
-Fast practice generated from the same content as Conversation Missions:
+Example topics include cafés, introductions, transport, shopping, time, family, everyday reactions, and asking for clarification.
 
-- Phrase Packs containing words, chunks, and short sentences.
-- Listening Bites focused on recognition and natural speech.
-- Response Sprints that require an appropriate reply.
-- A mixed Quick 5 review queue.
-- Saved-phrase review.
+### Response Practice
+
+The learner hears or reads a short prompt and chooses, types, or says an appropriate response. More than one response may be natural, and feedback should explain differences in meaning or register.
+
+### Sentence Practice
+
+Small activities for building and understanding sentences, including ordering chunks, filling gaps, matching meanings, and making controlled substitutions.
+
+### Quick Review
+
+A mixed one-, three-, or five-minute session drawn from saved, due, difficult, and recently encountered items.
 
 ### My Portuguese
 
-A personal area for saved phrases, recent mistakes, review suggestions, and situation-based progress.
+A personal area for saved items, recent mistakes, review suggestions, and progress across different skills.
 
-## Conversation Skills
+Progress should distinguish between:
 
-The app should explicitly develop the ability to:
-
-- Start a conversation.
-- React and show interest.
-- Maintain a conversation with follow-up questions.
-- Repair a misunderstanding or ask for repetition.
-- Soften requests and disagreement.
-- Close a conversation naturally.
+- Written recognition.
+- Listening recognition.
+- Meaning recall.
+- Phrase or sentence production.
+- Appropriate response selection.
 
 ## Initial MVP Direction
 
-- 10 original Conversation Missions.
-- Two or three European Portuguese voices.
-- Beginner and intermediate support where practical.
-- Natural and assisted listening modes.
-- Authored response branches rather than unrestricted live AI.
-- Phrase Packs, Listening Bites, and Response Sprints.
-- Voice recording and playback without automatic pronunciation grading.
-- Short reading and messaging exercises.
-- Local progress without requiring an account or backend.
+- A small set of reviewed topic packs containing words, chunks, phrases, and short sentences.
+- Listening Bites, phrase/vocabulary review, sentence building, and response selection.
+- Natural and assisted audio playback.
+- One-, three-, and five-minute mixed practice sessions.
+- Saved items and local progress without requiring an account or backend.
+- Beginner-oriented content first, while keeping the content model extensible.
 - iOS and web support from the beginning.
 
 ## Out of Scope for the First MVP
 
 - A complete A1–C2 grammar curriculum.
+- Interactive stories or long Conversation Missions.
 - Unrestricted AI conversation.
 - Automated pronunciation scoring presented as authoritative.
 - Social networking or user-generated public content.
@@ -85,9 +86,9 @@ The app should explicitly develop the ability to:
 
 ## Open Product Questions
 
-- Who is the first target learner: a new resident, traveller, partner/family member, or general learner?
+- Who is the first target learner: a complete beginner, learner with basic knowledge, new resident, traveller, or general learner?
 - What prior Portuguese knowledge should the first experience assume?
-- Which three real-life situations should form the first content prototypes?
+- Which three topic packs should form the first content prototypes?
+- Which activity type should be the first complete vertical slice?
 - Who will provide final native European Portuguese review and voice recordings?
 - Should the public web presence eventually be an app-like experience, an SEO-focused content site, or both?
-

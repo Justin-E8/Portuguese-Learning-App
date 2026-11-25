@@ -13,7 +13,7 @@ This direction is recorded in `docs/decisions/0001-universal-expo-app.md` and sh
 - Share UI where it produces a good experience; use platform-specific components where interaction patterns differ.
 - Keep learning content separate from presentation code.
 - Store early content in version-controlled structured data so changes are reviewable.
-- Derive Missions, Phrase Packs, Listening Bites, and Response Sprints from common approved content entities.
+- Derive Listening Bites, Phrase/Vocabulary Packs, Sentence Practice, Response Practice, and Quick Review from common approved content entities.
 - Start local-first and avoid accounts or a backend until a validated feature requires them.
 - Keep external services behind small interfaces so providers can be changed.
 
@@ -49,4 +49,4 @@ The generated scaffold may differ temporarily. Structural changes should be made
 - Development should remain free unless the user explicitly approves a cost.
 - Full Xcode is not currently installed, so iOS Simulator verification is blocked until it is installed.
 - The first release should avoid a backend and production AI API unless requirements change.
-
+- The activity model should support very short, independently completable sessions instead of depending on story or mission state.

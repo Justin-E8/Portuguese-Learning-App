@@ -1,6 +1,6 @@
 # Portuguese Learning App
 
-A listening-first European Portuguese (`pt-PT`) conversation rehearsal app for iOS and web.
+A microlearning-first European Portuguese (`pt-PT`) practice app for iOS and web, built around short listening, phrase, vocabulary, sentence, and response activities.
 
 The project is in its foundation phase. Read these files before contributing:
 
