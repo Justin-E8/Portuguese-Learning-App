@@ -2,7 +2,7 @@
 
 A microlearning-first European Portuguese (`pt-PT`) practice app for iOS and web, built around short listening, phrase, vocabulary, sentence, and response activities.
 
-The project is in its foundation phase. Read these files before contributing:
+The project is building its first complete microlearning activity. Read these files before contributing:
 
 - `AGENTS.md`
 - `docs/PRODUCT.md`
@@ -41,6 +41,7 @@ Or run checks individually:
 ```bash
 npm run lint
 npm run typecheck
+npm test
 npm run export:web
 ```
 
