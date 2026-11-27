@@ -23,6 +23,23 @@ Working product promise:
 
 ## Core Experiences
 
+### Activity Hub
+
+The home screen is a clear menu of activity families rather than dropping the learner directly
+into one exercise. It should make the available choices and time commitment understandable at a
+glance:
+
+- Listening.
+- Phrases and vocabulary.
+- Sentence practice.
+- Response practice.
+- Quick review.
+
+Each family opens an interface designed for that kind of practice. Shared content and visual
+foundations should keep the product coherent, but the activities should not be forced into one
+generic exercise template. Activity families that are not built yet must be honestly labelled as
+planned and must not behave like working controls.
+
 ### Listening Bites
 
 Short European Portuguese audio clips followed by a focused task, such as:
@@ -63,6 +80,20 @@ Progress should distinguish between:
 - Meaning recall.
 - Phrase or sentence production.
 - Appropriate response selection.
+
+## Experience Direction
+
+- Treat the current product as a mobile-first pocket practice tool, not a course dashboard.
+- Establish a recognizable visual voice informed by Portuguese print and tile traditions without
+  turning the interface into a themed souvenir.
+- Prefer editorial hierarchy, typography, rhythm, and purposeful flat color over stacks of generic
+  rounded cards, pills, gradients, and decorative dashboard statistics.
+- Use Portuguese activity cues alongside clear English support where that helps a beginner learn
+  the interface without guessing.
+- Give every activity family its own interaction pattern while preserving shared navigation,
+  accessibility behavior, spacing, colors, and type styles.
+- Treat this as a working design direction rather than final branding; learner testing and the
+  user's visual review still determine approval.
 
 ## Initial MVP Direction
 

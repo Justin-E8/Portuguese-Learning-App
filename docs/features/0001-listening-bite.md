@@ -1,6 +1,6 @@
 # Feature 0001: First Listening Bite
 
-- Status: Implementation complete; content review and merge approval pending
+- Status: Visual and navigation revision in progress; content review and merge approval pending
 - Branch: `codex/feature-content-activity-model`
 - First drafted: 2026-11-24
 
@@ -33,6 +33,8 @@ This is a reversible product assumption for the first vertical slice, not a fina
 - Natural and assisted playback controls.
 - Answer selection, submission, feedback, transcript reveal, and retry.
 - A mobile-first responsive screen that works with touch, keyboard, light mode, and dark mode.
+- An activity-hub entry point that opens Listening as its own activity-specific flow and labels
+  unfinished activity families honestly.
 - Automated tests for content validation, answer evaluation, and `pt-PT` voice selection.
 
 ## Out of Scope
@@ -54,6 +56,9 @@ This is a reversible product assumption for the first vertical slice, not a fina
 7. Draft and synthetic-audio status are visible in the prototype.
 8. Linting, type checking, automated tests, and the web export pass.
 9. The flow is manually checked at a phone-sized web viewport.
+10. The app opens on an activity menu rather than dropping the learner directly into the exercise.
+11. The Listening interface has a purposeful activity-specific composition and uses the shared
+    visual foundation without reverting to a generic dashboard-card layout.
 
 ## Known Limitations
 

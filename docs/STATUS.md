@@ -25,16 +25,19 @@ First microlearning vertical slice.
 
 ## In Progress
 
-- Review the first Listening Bite implementation and draft café content before merging the feature branch.
+- Replace the generic prototype UI with the provisional editorial visual direction and an activity
+  hub before reviewing the feature branch for merge.
+- Review the revised first Listening Bite implementation and draft café content before merging the feature branch.
 - Arrange native European Portuguese and teaching review for the prototype content.
 
 ## Next
 
-1. Confirm or revise the provisional English-speaking pre-A1/A1 target learner.
-2. Review and approve the first Listening Bite branch for merging.
-3. Select the other two prototype topic packs.
-4. Expand the café pack only after the first content and practice loop is reviewed.
-5. Replace prototype text-to-speech with approved native European Portuguese audio before production.
+1. Complete and review the activity hub and Listening Bite visual revision on phone and desktop.
+2. Confirm or revise the provisional English-speaking pre-A1/A1 target learner.
+3. Review and approve the first Listening Bite branch for merging.
+4. Select the other two prototype topic packs.
+5. Expand the café pack only after the first content and practice loop is reviewed.
+6. Replace prototype text-to-speech with approved native European Portuguese audio before production.
 
 ## Known Blockers and Risks
 
