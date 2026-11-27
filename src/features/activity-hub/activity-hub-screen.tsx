@@ -247,9 +247,9 @@ function ActivityRow({ activity, compact }: { activity: ActivitySummary; compact
       <Pressable
         accessibilityRole="link"
         accessibilityLabel={`Start ${activity.englishName}, ${activity.duration}`}
-        style={({ pressed, hovered }) => [
+        style={({ pressed }) => [
           styles.availableRow,
-          { backgroundColor: hovered ? theme.backgroundSelected : theme.surfaceRaised },
+          { backgroundColor: pressed ? theme.backgroundSelected : theme.surfaceRaised },
           pressed && styles.pressed,
         ]}>
         {content}
