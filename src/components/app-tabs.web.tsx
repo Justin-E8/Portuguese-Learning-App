@@ -9,9 +9,10 @@ import {
 import { Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
 
 import { ThemedText } from './themed-text';
-import { ThemedView } from './themed-view';
+import { TileMark } from './tile-mark';
 
 import { MaxContentWidth, Spacing } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 
 export default function AppTabs() {
   return (
@@ -20,7 +21,7 @@ export default function AppTabs() {
       <TabList asChild>
         <CustomTabList>
           <TabTrigger name="home" href="/" asChild>
-            <TabButton>Practice</TabButton>
+            <TabButton>Activities</TabButton>
           </TabTrigger>
           <TabTrigger name="library" href="/explore" asChild>
             <TabButton>Library</TabButton>
@@ -32,23 +33,31 @@ export default function AppTabs() {
 }
 
 function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps) {
+  const theme = useTheme();
+
   return (
     <Pressable
       {...props}
       accessibilityRole="tab"
-      style={({ pressed }) => [styles.tabPressable, pressed && styles.pressed]}>
-      <ThemedView
-        type={isFocused ? 'backgroundSelected' : 'backgroundElement'}
-        style={styles.tabButtonView}>
-        <ThemedText type="smallBold" themeColor={isFocused ? 'text' : 'textSecondary'}>
+      style={({ pressed }) => [
+        styles.tabPressable,
+        { borderBottomColor: isFocused ? theme.accent : 'transparent' },
+        pressed && styles.pressed,
+      ]}>
+      <View style={styles.tabButtonView}>
+        <ThemedText
+          type="smallBold"
+          themeColor={isFocused ? 'text' : 'textSecondary'}
+          style={styles.tabLabel}>
           {children}
         </ThemedText>
-      </ThemedView>
+      </View>
     </Pressable>
   );
 }
 
 function CustomTabList(props: TabListProps) {
+  const theme = useTheme();
   const { width } = useWindowDimensions();
   const compact = width < 700;
 
@@ -57,22 +66,31 @@ function CustomTabList(props: TabListProps) {
       {...props}
       style={[
         styles.tabListContainer,
+        compact
+          ? { backgroundColor: theme.surfaceRaised, borderTopColor: theme.border }
+          : { backgroundColor: theme.background, borderBottomColor: theme.border },
         compact ? styles.tabListContainerCompact : styles.tabListContainerWide,
       ]}>
-      <ThemedView
-        type="backgroundElement"
+      <View
         style={[
           styles.innerContainer,
           compact ? styles.innerContainerCompact : styles.innerContainerWide,
         ]}>
         {!compact && (
           <View style={styles.brand}>
-            <View style={styles.brandDot} />
-            <ThemedText type="smallBold">Português · PT</ThemedText>
+            <TileMark size={34} />
+            <View>
+              <ThemedText type="smallBold" style={styles.brandName}>
+                PORTUGUÊS
+              </ThemedText>
+              <ThemedText type="small" themeColor="textSecondary" style={styles.brandCaption}>
+                SMALL PRACTICE · PT-PT
+              </ThemedText>
+            </View>
           </View>
         )}
         {props.children}
-      </ThemedView>
+      </View>
     </View>
   );
 }
@@ -88,64 +106,68 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     zIndex: 10,
+    borderColor: 'transparent',
   },
   tabListContainerWide: {
     top: 0,
-    padding: Spacing.three,
+    borderBottomWidth: 1,
+    paddingHorizontal: Spacing.four,
   },
   tabListContainerCompact: {
     bottom: 0,
+    borderTopWidth: 1,
     paddingHorizontal: 12,
-    paddingTop: 8,
-    paddingBottom: 12,
+    paddingTop: 4,
+    paddingBottom: 8,
+    boxShadow: '0 -8px 20px rgba(20, 35, 45, 0.08)',
   },
   innerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     maxWidth: MaxContentWidth,
-    borderWidth: 1,
-    borderColor: 'rgba(100, 100, 100, 0.16)',
-    boxShadow: '0 8px 20px rgba(0, 0, 0, 0.12)',
   },
   innerContainerWide: {
     flexGrow: 1,
-    gap: Spacing.two,
-    paddingVertical: Spacing.two,
-    paddingHorizontal: Spacing.three,
-    borderRadius: Spacing.five,
+    minHeight: 78,
+    gap: Spacing.three,
   },
   innerContainerCompact: {
     width: '100%',
-    gap: Spacing.two,
-    padding: 7,
-    borderRadius: 20,
+    gap: 4,
   },
   brand: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 9,
+    gap: 11,
     marginRight: 'auto',
   },
-  brandDot: {
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    backgroundColor: '#E8734A',
+  brandName: {
+    fontSize: 13,
+    lineHeight: 16,
+    letterSpacing: 1.2,
+  },
+  brandCaption: {
+    fontSize: 10,
+    lineHeight: 13,
+    letterSpacing: 0.6,
   },
   tabPressable: {
     flexGrow: 1,
     flexBasis: 0,
-    maxWidth: 180,
+    maxWidth: 150,
+    borderBottomWidth: 3,
   },
   pressed: {
     opacity: 0.72,
   },
   tabButtonView: {
-    minHeight: 42,
+    minHeight: 54,
     paddingVertical: Spacing.two,
-    paddingHorizontal: Spacing.three,
-    borderRadius: 14,
+    paddingHorizontal: Spacing.two,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  tabLabel: {
+    letterSpacing: 0.2,
   },
 });
