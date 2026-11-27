@@ -22,17 +22,23 @@ First microlearning vertical slice.
 - Ten automated content and domain tests pass, along with linting, strict type checking, and the web export.
 - Expo SDK 57 dependencies are on their current compatible patch releases, and all 21 Expo Doctor checks pass.
 - The practice flow and shared library were manually checked at a 390 × 844 mobile-web viewport.
+- The generic prototype shell has been replaced with a provisional editorial visual foundation,
+  responsive Activity Hub, activity-specific Listening route, and revised Library.
+- All five planned activity families are visible in the hub; only the implemented Listening flow is
+  interactive, and the others are honestly marked as planned.
+- The revised hub, Listening flow, answer feedback, Library, and navigation were manually checked at
+  390 × 844 and 1440 × 900 with no browser console errors.
 
 ## In Progress
 
-- Replace the generic prototype UI with the provisional editorial visual direction and an activity
-  hub before reviewing the feature branch for merge.
-- Review the revised first Listening Bite implementation and draft café content before merging the feature branch.
+- Review the revised visual direction, Activity Hub, first Listening Bite, and draft café content
+  before merging the feature branch.
 - Arrange native European Portuguese and teaching review for the prototype content.
 
 ## Next
 
-1. Complete and review the activity hub and Listening Bite visual revision on phone and desktop.
+1. Obtain user visual approval or focused revision notes for the Activity Hub, Listening Bite, and
+   Library.
 2. Confirm or revise the provisional English-speaking pre-A1/A1 target learner.
 3. Review and approve the first Listening Bite branch for merging.
 4. Select the other two prototype topic packs.

@@ -17,6 +17,14 @@ This direction is recorded in `docs/decisions/0001-universal-expo-app.md` and sh
 - Start local-first and avoid accounts or a backend until a validated feature requires them.
 - Keep external services behind small interfaces so providers can be changed.
 
+## Navigation Shape
+
+- A root stack owns activity-specific flows that should temporarily take over the screen.
+- The tab shell owns the Activity Hub and Library destinations.
+- The Activity Hub is the app entry point and may link only to implemented activity routes.
+- Listening and future practice families use their own routes and interfaces outside the tab shell,
+  while still sharing content, domain logic, and visual tokens.
+
 ## Intended Source Structure
 
 ```text

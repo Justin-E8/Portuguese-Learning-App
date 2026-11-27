@@ -1,6 +1,6 @@
 # Feature 0001: First Listening Bite
 
-- Status: Visual and navigation revision in progress; content review and merge approval pending
+- Status: Implementation complete; visual review, content review, and merge approval pending
 - Branch: `codex/feature-content-activity-model`
 - First drafted: 2026-11-24
 
@@ -69,7 +69,9 @@ This is a reversible product assumption for the first vertical slice, not a fina
 ## Validation Record
 
 - `npm run check` passes, including linting, strict type checking, ten automated tests, and the static web export.
-- The practice and library screens were checked at a 390 × 844 mobile-web viewport.
-- Natural and assisted playback controls, correct and incorrect answers, transcript reveal, retry, and tab navigation were exercised manually.
-- Browser console inspection found no application errors after the final reload.
+- The Activity Hub, Listening flow, and Library were checked at 390 × 844 and 1440 × 900 web viewports.
+- Activity-tab navigation, opening and leaving Listening, answer selection, correct and corrective
+  feedback, transcript reveal, and retry were exercised manually.
+- Unfinished activity families are visibly marked as planned and do not expose interactive controls.
+- Browser console inspection found no application warnings or errors after the final reload.
 - iOS Simulator validation was not run because full Xcode is not installed.
